@@ -93,10 +93,10 @@ RANN_12
 		- still only reaching ~23% accuracy on SNN, but loss is much closer than before (~2 instead of ~50 -- trained ANN loss is ~.8)
 			- still same over-focused distrubution, but as mentioned before it's better (for SNN, btw)
 
-RANN_12
-	- same architecture as RANN_13 but with 4bit precision weights/activations
-	- trained for __ epochs using 5500 dataset (lr=1e-3)
-	- reached __% accuracy on the test data
+RANN_13
+	- same architecture as RANN_12 but with word2vector model actually used in paper (not yet trained on ALL of wikipedia -- first billion(? maybe 3?) words)
+	- trained for 50 epochs using 5500 dataset (lr=1e-3)
+	- reached 74.7% accuracy on the test data
 	- as optimizer, uses: torch.optim.Adam
 
 [1] "Conversion of Artificial Recurrent Neural Networks to Spiking Neural Networks for Low-power Neuromorphic Hardware",
